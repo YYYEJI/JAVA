@@ -1,0 +1,32 @@
+Given the definition of a 2D array such as the following:
+	String[][] data = {{"A","B"},
+					   {"1","2"},
+					   {"XX","YY","ZZ"}};
+Write a recursive Java program that outputs all combinations of each subarray in order. In the above example the desired output (although it doesn't have to be in this order) is:
+A 1 XX
+A 1 YY
+A 1 ZZ
+A 2 ZZ
+A 2 YY
+A 2 ZZ
+B 1 XX
+B 1 YY
+B 1 ZZ
+B 2 ZZ
+B 2 YY
+B 2 ZZ
+
+Your program should work with arbitrarily sized arrays in either dimension.
+For example, the following data:
+	String[][] data = {{"A"},
+					   {"1"},
+					   {"2"},
+					   {"XX",YY"}};
+should output:
+A 1 2 XX
+A 1 2 YY
+
+String[][] data = {{"A","B"},
+			       {"1","3"},
+			       {"2"},
+			       {"XX","YY"}};
